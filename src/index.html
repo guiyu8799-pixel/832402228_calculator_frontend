@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前后端分离计算器</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="header__title">Calculator</h1>
+    <p class="header__subtitle">前后端分离计算器系统</p>
+</header>
+
+<main class="layout">
+    <!-- 计算区：输入表达式并显示后端返回的结果 -->
+    <section class="panel">
+        <input id="expression-input" class="display__expression" type="text"
+               placeholder="输入表达式，例如 (1+2)*3" autocomplete="off" spellcheck="false">
+        <div class="display__result">
+            <span class="display__equals">=</span>
+            <span id="result-value">0</span>
+        </div>
+        <div id="expression-error" class="display__error is-hidden"></div>
+
+        <div class="keypad">
+            <button class="key key--function" type="button" data-action="clear">C</button>
+            <button class="key key--function" type="button" data-action="backspace">⌫</button>
+            <button class="key" type="button" data-value="(">(</button>
+            <button class="key" type="button" data-value=")">)</button>
+
+            <button class="key" type="button" data-value="7">7</button>
+            <button class="key" type="button" data-value="8">8</button>
+            <button class="key" type="button" data-value="9">9</button>
+            <button class="key key--operator" type="button" data-value="/">÷</button>
+
+            <button class="key" type="button" data-value="4">4</button>
+            <button class="key" type="button" data-value="5">5</button>
+            <button class="key" type="button" data-value="6">6</button>
+            <button class="key key--operator" type="button" data-value="*">×</button>
+
+            <button class="key" type="button" data-value="1">1</button>
+            <button class="key" type="button" data-value="2">2</button>
+            <button class="key" type="button" data-value="3">3</button>
+            <button class="key key--operator" type="button" data-value="-">−</button>
+
+            <button class="key" type="button" data-value="0">0</button>
+            <button class="key" type="button" data-value=".">.</button>
+            <button class="key key--function" type="button" data-action="negate">±</button>
+            <button class="key key--operator" type="button" data-value="+">+</button>
+
+            <button class="key key--equals" type="button" data-action="equals">=</button>
+        </div>
+    </section>
+
+    <!-- 历史区：显示后端数据库中的计算历史，可删除指定记录 -->
+    <section class="panel">
+        <h2 class="panel__title">计算历史</h2>
+        <p id="history-summary" class="history__summary">加载中…</p>
+        <ul id="history-list" class="history__list"></ul>
+    </section>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
