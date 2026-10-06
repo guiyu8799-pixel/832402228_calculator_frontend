@@ -34,7 +34,7 @@
 
 ## 1. 适用范围
 
-适用于 `calculator_frontend` 仓库中的全部 HTML、CSS、JavaScript 源码与 `server.js`。
+适用于 `832402228_calculator_frontend` 仓库中的全部 HTML、CSS、JavaScript 源码与 `server.js`。
 
 ## 2. 文件组织
 

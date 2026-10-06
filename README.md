@@ -69,8 +69,8 @@ Because the app is plain static files, any static web server works.
 ## 4. Installation
 
 ```bash
-git clone <frontend-repository-url>
-cd <StudentID>_calculator_frontend
+git clone https://github.com/guiyu8799-pixel/832402228_calculator_frontend.git
+cd 832402228_calculator_frontend
 ```
 
 There are no dependencies to install.
@@ -128,7 +128,7 @@ Keyboard support is limited to what the assignment asks for: `Enter` calculates,
 ## 9. Project structure
 
 ```text
-calculator_frontend/
+832402228_calculator_frontend/
 ├── src/
 │   ├── index.html          # page structure: display, keypad, history panel
 │   ├── css/
@@ -170,10 +170,10 @@ Kept on this side, exactly as the assignment describes:
 
 ```bash
 # terminal 1 - backend
-cd calculator_backend && java -jar target/calculator-backend-1.0.0.jar
+cd 832402228_calculator_backend && java -jar target/calculator-backend-1.0.0.jar
 
 # terminal 2 - front end
-cd calculator_frontend && node server.js
+cd 832402228_calculator_frontend && node server.js
 
 # then open http://localhost:5510/
 ```
