@@ -1,0 +1,15 @@
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node (only used by the optional static server, which has no dependencies)
+node_modules/
+
+# Local helper used by the automated screenshot script
+verification/chrome-profile/
